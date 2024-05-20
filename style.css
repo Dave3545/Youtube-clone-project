@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  position: relative;
+  background: #f0f0f0;
+  font-family: 'roboto', sans-serif;
+}
+
+/* --- Navbar top -- */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 2.5vw;
+}
+
+.toggle-btn {
+  width: 20px;
+  height: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.toggle-btn span {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #979797;
+}
+
+.toggle-btn span:nth-child(1) {
+  top: 0;
+}
+
+.toggle-btn span:nth-child(3) {
+  top: 100%;
+}
+
+.logo {
+  height: 40px;
+  margin: -10px 30px 0px 15px;
+}
+
+.mic {
+  margin: -5px;
+  border-radius: 15px;
+  border: 1px solid rgba(83, 82, 82, 0.308);
+}
+
+.search-box {
+  position: relative;
+  width: 50%;
+  height: 35px;
+  margin-left: 100px;
+  margin-right: 25px;
+}
+
+.search-container {
+  position: relative;
+  width: 300px;
+}
+
+.search-bar {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #dbdbdb;
+  padding: 0 20px;
+  font-size: 16px;
+  text-transform: capitalize;
+  border-radius: 25px;
+}
+
+.search-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 55px;
+  background: #f0f0f0;
+  border: 2px solid #dbdbdb;
+  padding: 5px 0;
+  border-left: none;
+  border-radius: 0 25px 25px 0;
+}
+
+.search-btn img {
+  height: 100%;
+}
+
+.user-options {
+  height: 35px;
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.user-options .icon {
+  height: 80%;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.user-dp {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user-dp img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Sidebar */
+.side-bar {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100px;
+  min-width: 100px;
+  height: calc(100vh - 60px);
+  background: #fff;
+  transition: width 0.3s ease;
+  /* Only transition width for smooth animation */
+  z-index: 1000;
+}
+
+/* Adjust text alignment when sidebar is expanded */
+.side-bar.expanded {
+  width: 150px;
+  /* Adjust the width when sidebar is expanded */
+}
+
+/* Adjust text alignment in both default and expanded states */
+.links {
+  display: flex;
+  flex-direction: column;
+  /* Arrange items vertically */
+  align-items: center;
+  /* Center items horizontally */
+  justify-content: center;
+  /* Center items vertically */
+  padding: 10px;
+  /* Add padding for space */
+  color: #242424;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 20px;
+  text-align: center;
+  /* Center text */
+}
+
+.links img {
+  height: 25px;
+  margin-bottom: 5px;
+  /* Add margin below the image */
+}
+
+/* Hide text by default */
+.links span {
+  display: none;
+}
+
+/* Show text when sidebar is expanded */
+.side-bar.expanded .links span {
+  display: block;
+  /* Display the text */
+}
+
+/* Adjust text alignment when sidebar is expanded */
+.side-bar.expanded .links {
+  justify-content: flex-start;
+  /* Align items to the left */
+}
+
+
+.links:hover,
+.links.active {
+  background: rgba(255, 255, 255, 0.267);
+}
+
+.separator {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+/* filter */
+
+.History {
+  position: fixed;
+  left: 100px;
+  top: 60px;
+  width: calc(250% - 250px);
+  height: 60px;
+  background: #fff;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.filters::-webkit-scrollbar {
+  display: none;
+}
+
+.History-options {
+  flex: 0 0 auto;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background: #f0f0f0;
+  border: 1px solid #dbdbdb;
+  text-transform: capitalize;
+  margin-right: 10px;
+  color: #242424;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  /* Remove underline */
+}
+
+.History-options.active {
+  color: #fff;
+  background: #242424;
+}
+
+/* video */
+.Container {
+  width: calc(110% - 250px);
+  margin-top: 120px;
+  margin-left: 100px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-gap: 20px 5px;
+  overflow-x: hidden;
+}
+
+.Container {
+  min-height: 250px;
+  height: auto;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.content {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.channel-icon {
+  width: 20px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.title {
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+}
+
+.channel-name {
+  font-size: 14px;
+  margin: 2px 0;
+  color: #979797;
+}
+
+.Videos a {
+  text-decoration: none;
+  color: rgb(44, 44, 44);
+}
+
+.Videos a h6 {
+  pointer-events: none;
+}
+
+.Text {
+  text-align: center;
+  /* Add some space between the heading and the videos */
+  right: 37%;
+  position: relative;
+  bottom: -140px;
+}
+
+
+.Text h1 {
+  font-family: Arial, sans-serif;
+  color: #333;
+  letter-spacing: 2px;
+}
