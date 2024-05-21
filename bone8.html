@@ -137,364 +137,401 @@
     object-fit: cover;
   }
 
- /* --- Content Video -- */
-/* Styles for the video container */
-.Videos {
+  /* --- Content Video -- */
+  /* Styles for the video container */
+  .Videos {
     width: 100%;
     max-width: 800px;
     margin-left: 110px;
-}
+  }
 
-.Videos video {
+  .Videos video {
     width: 100%;
     height: auto;
     margin-top: 100px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+  }
 
-/* Styles for the video wrapper */
-.video-wrapper {
-    margin-top: 20px; /* Adjust margin as needed */
+  /* Styles for the video wrapper */
+  .video-wrapper {
+    margin-top: 20px;
+    /* Adjust margin as needed */
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+  }
 
-.video-wrapper h2,
-.video-wrapper p {
-    color: #000; /* Set the color to black or any color you prefer */
-    text-decoration: none; /* Remove any underlining */
-    font-weight: normal; /* Set font weight to normal */
-}
+  .video-wrapper h2,
+  .video-wrapper p {
+    color: #000;
+    /* Set the color to black or any color you prefer */
+    text-decoration: none;
+    /* Remove any underlining */
+    font-weight: normal;
+    /* Set font weight to normal */
+  }
 
-/* Styles for channel info container */
-.video-wrapper .channel-info {
+  /* Styles for channel info container */
+  .video-wrapper .channel-info {
     margin-top: 10px;
-}
+  }
 
-/* Styles for channel details container */
-.video-wrapper .channel-details {
+  /* Styles for channel details container */
+  .video-wrapper .channel-details {
     display: flex;
     align-items: center;
-}
+  }
 
-/* Styles for channel icon */
-.video-wrapper .channel-details img {
-    width: 35px; /* Adjust the size of the channel icon as needed */
+  /* Styles for channel icon */
+  .video-wrapper .channel-details img {
+    width: 35px;
+    /* Adjust the size of the channel icon as needed */
     height: 35px;
     border-radius: 50%;
-    margin-right: 10px; /* Add space between icon and text */
-}
+    margin-right: 10px;
+    /* Add space between icon and text */
+  }
 
-/* Styles for channel name */
-.video-wrapper .channel-details .channel-name {
+  /* Styles for channel name */
+  .video-wrapper .channel-details .channel-name {
     margin: 0;
-    font-size: 16px; /* Adjust font size */
-    font-weight: bold; /* Set font weight to bold */
-    color: #333; /* Set color */
-}
+    font-size: 16px;
+    /* Adjust font size */
+    font-weight: bold;
+    /* Set font weight to bold */
+    color: #333;
+    /* Set color */
+  }
 
-/* Styles for subscriber count */
-.video-wrapper .subscriber-count {
-    margin-top: 9px; /* Add some space between channel details and subscriber count */
-    font-size: 10px; /* Adjust font size */
-    color: #666; /* Set color */
-} 
-.video-wrapper h6.subscriber-count {
+  /* Styles for subscriber count */
+  .video-wrapper .subscriber-count {
+    margin-top: 9px;
+    /* Add some space between channel details and subscriber count */
+    font-size: 10px;
+    /* Adjust font size */
+    color: #666;
+    /* Set color */
+  }
+
+  .video-wrapper h6.subscriber-count {
     right: -40px;
     position: relative;
     top: -15px;
-}
+  }
 
-/* Styles for subscribe button */
-.video-wrapper .subscribe-button {
-    background-color: #ff0000; /* Example color */
-    color: #fff; /* Example color */
-    padding: 8px 16px; /* Example padding */
+  /* Styles for subscribe button */
+  .video-wrapper .subscribe-button {
+    background-color: #ff0000;
+    /* Example color */
+    color: #fff;
+    /* Example color */
+    padding: 8px 16px;
+    /* Example padding */
     border: none;
     border-radius: 50px;
     cursor: pointer;
     position: relative;
     right: -180px;
     top: -40px;
-}
-/* Styles for description */
-.video-wrapper .description {
-  margin-top: -20px;
-}
-
-/* Styles for feedback buttons */
-.video-wrapper .feedback-buttons {
-  margin-top: 10px;
-  right: -60%;
-  position: relative;
-  top: -80px;
-}
-
-.video-wrapper .feedback-buttons button {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  color: #333;
-  padding: 6px 12px; /* Adjust button padding */
-  margin-right: 5px; /* Adjust button margin */
-  cursor: pointer;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-.video-wrapper .feedback-buttons button:hover {
-  background-color: #f0f0f0;
-}
-/* Styles for comment section */
-.video-wrapper .comment-section {
-  margin-top: 20px;
-}
-
-/* Styles for user comment */
-.video-wrapper .user-comment {
-  display: flex;
-  align-items: flex-start;
-}
-
-.video-wrapper .user-comment img {
-  width: 30px; /* Adjust the size of the user icon */
-  height: 30px;
-  border-radius: 50%;
-  margin-right: 10px; /* Add space between icon and text */
-}
-
-.video-wrapper .user-comment textarea {
-  flex: 1;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical; /* Allow vertical resizing */
-}
-
-
-/* Styles for the scrollable container */
-.Container.Scroll {
-  width: 30%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  height: 70%;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 5px;
-  position: fixed;
-  top: 55%;
-  bottom: 55px;
-  right: -10%;
-  transform: translateY(-50%);
-  margin-right: 150px;
-}
-
-/* Styles for each video within the scrollable container */
-.Container.Scroll .video {
-  display: flex;
-  margin-bottom: 20px;
-}
-
-.Container.Scroll .thumbnail {
-  width: 150px;
-  height: 90px;
-  margin-right: 10px;
-}
-
-.Container.Scroll .content {
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-}
-
-.Container.Scroll .info {
-  flex-grow: 1;
-}
-
-/* Media query for responsiveness */
-@media (max-width: 768px) {
-  .Container.Scroll {
-    max-width: 100%;
-    height: auto;
-    position: relative;
-    top: auto;
-    right: auto;
-    transform: none;
   }
-}
-a{
+
+  /* Styles for description */
+  .video-wrapper .description {
+    margin-top: -20px;
+  }
+
+  /* Styles for feedback buttons */
+  .video-wrapper .feedback-buttons {
+    margin-top: 10px;
+    right: -60%;
+    position: relative;
+    top: -80px;
+  }
+
+  .video-wrapper .feedback-buttons button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+    padding: 6px 12px;
+    /* Adjust button padding */
+    margin-right: 5px;
+    /* Adjust button margin */
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .video-wrapper .feedback-buttons button:hover {
+    background-color: #f0f0f0;
+  }
+
+  /* Styles for comment section */
+  .video-wrapper .comment-section {
+    margin-top: 20px;
+  }
+
+  /* Styles for user comment */
+  .video-wrapper .user-comment {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .video-wrapper .user-comment img {
+    width: 30px;
+    /* Adjust the size of the user icon */
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    /* Add space between icon and text */
+  }
+
+  .video-wrapper .user-comment textarea {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    /* Allow vertical resizing */
+  }
+
+
+  /* Styles for the scrollable container */
+  .Container.Scroll {
+    width: 30%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 70%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 5px;
+    position: fixed;
+    top: 55%;
+    bottom: 55px;
+    right: -10%;
+    transform: translateY(-50%);
+    margin-right: 150px;
+  }
+
+  /* Styles for each video within the scrollable container */
+  .Container.Scroll .video {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .Container.Scroll .thumbnail {
+    width: 150px;
+    height: 90px;
+    margin-right: 10px;
+  }
+
+  .Container.Scroll .content {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  .Container.Scroll .info {
+    flex-grow: 1;
+  }
+
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .Container.Scroll {
+      max-width: 100%;
+      height: auto;
+      position: relative;
+      top: auto;
+      right: auto;
+      transform: none;
+    }
+  }
+
+  a {
     text-decoration-line: none;
     color: #000;
   }
+
   /* Sidebar */
-.side-bar {
-  position: fixed;
-  top: 60px;
-  left: -100px; /* Move sidebar off-screen */
-  width: 100px;
-  min-width: 100px;
-  height: calc(100vh - 60px);
-  background: #fff;
-  transition: left 0.3s ease; /* Only transition left position for smooth animation */
-  z-index: 1000;
-}
+  .side-bar {
+    position: fixed;
+    top: 60px;
+    left: -100px;
+    /* Move sidebar off-screen */
+    width: 100px;
+    min-width: 100px;
+    height: calc(100vh - 60px);
+    background: #fff;
+    transition: left 0.3s ease;
+    /* Only transition left position for smooth animation */
+    z-index: 1000;
+  }
 
-.side-bar.expanded {
-  left: 0; /* Move sidebar to its original position */
-}
-
-
-/* Adjust text alignment in both default and expanded states */
-.links {
-  display: flex;
-  flex-direction: column; /* Arrange items vertically */
-  align-items: center; /* Center items horizontally */
-  justify-content: center; /* Center items vertically */
-  padding: 10px; /* Add padding for space */
-  color: #242424;
-  font-size: 14px;
-  font-weight: 500;
-  text-decoration: none;
-  margin: 20px;
-  text-align: center; /* Center text */
-}
-
-.links img {
-  height: 25px;
-  margin-bottom: 5px; /* Add margin below the image */
-}
-
-/* Hide text by default */
-.links span {
-  display: none;
-}
-
-/* Show text when sidebar is expanded */
-.side-bar.expanded .links span {
-  display: block; /* Display the text */
-}
-
-/* Adjust text alignment when sidebar is expanded */
-.side-bar.expanded .links {
-  justify-content: flex-start; /* Align items to the left */
-}
+  .side-bar.expanded {
+    left: 0;
+    /* Move sidebar to its original position */
+  }
 
 
-.links:hover,
-.links.active {
-  background: rgba(255, 255, 255, 0.267);
-}
+  /* Adjust text alignment in both default and expanded states */
+  .links {
+    display: flex;
+    flex-direction: column;
+    /* Arrange items vertically */
+    align-items: center;
+    /* Center items horizontally */
+    justify-content: center;
+    /* Center items vertically */
+    padding: 10px;
+    /* Add padding for space */
+    color: #242424;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 20px;
+    text-align: center;
+    /* Center text */
+  }
 
-.separator {
-  border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  margin: 20px 0;
-}
+  .links img {
+    height: 25px;
+    margin-bottom: 5px;
+    /* Add margin below the image */
+  }
 
+  /* Hide text by default */
+  .links span {
+    display: none;
+  }
+
+  /* Show text when sidebar is expanded */
+  .side-bar.expanded .links span {
+    display: block;
+    /* Display the text */
+  }
+
+  /* Adjust text alignment when sidebar is expanded */
+  .side-bar.expanded .links {
+    justify-content: flex-start;
+    /* Align items to the left */
+  }
+
+
+  .links:hover,
+  .links.active {
+    background: rgba(255, 255, 255, 0.267);
+  }
+
+  .separator {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+  }
 </style>
 
 <body>
   <nav class="navbar">
     <div class="toggle-btn" onclick="toggleSidebar()">
-        <span></span>
-        <span></span>
-        <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
     <a href="index.html"><img src="medias/Logo.png" class="logo" alt=""></a>
     <div class="search-box">
-        <input type="text" class="search-bar" placeholder="search">
-        <div>
-            <a href=""><button class="search-btn"><img src="medias/search-regular-24.png" alt=""></button></a>
-        </div>
+      <input type="text" class="search-bar" placeholder="search">
+      <div>
+        <a href=""><button class="search-btn"><img src="medias/search-regular-24.png" alt=""></button></a>
+      </div>
     </div>
     <div class="mic">
-        <a href=""><img src="medias/microphone-solid-24.png"></a>
+      <a href=""><img src="medias/microphone-solid-24.png"></a>
     </div>
     <div class="user-options">
-        <a href=""><img src="medias/video-plus-regular-24.png" class="icon" alt=""></a>
-        <a href=""><img src="medias/bell-regular-24.png" class="icon" alt=""></a>
-        <div class="user-dp">
-            <a href=""><img src="medias/User.png" alt=""></a>
-        </div>
+      <a href=""><img src="medias/video-plus-regular-24.png" class="icon" alt=""></a>
+      <a href=""><img src="medias/bell-regular-24.png" class="icon" alt=""></a>
+      <div class="user-dp">
+        <a href=""><img src="medias/User.png" alt=""></a>
+      </div>
     </div>
-</nav>
-<!-- sidebar -->
-<div class="container">
-  <div class="side-bar">
-    <a href="index.html" class="links active">
-      <img src="medias/home-solid-24.png" alt="">
-      <span>Home</span>
-    </a>
-    <a href="./SideBar/YtShorts.html" class="links">
-      <img src="medias/youtube-shorts-logo-15251.png" alt="">
-      <span>Shorts</span>
-    </a>
-    <a href="./SideBar/subscriptions.html" class="links">
-      <img src="medias/youtube_subscription_icon_136007.png" alt="">
-      <span>Subscription</span>
-    </a>
-    <hr class="separator">
-    <a href="./SideBar/History.html" class="links">
-      <img src="medias/history-regular-24.png" alt="">
-      <span>History</span>
-    </a>
-    <a href="./SideBar/Watch later.html" class="links">
-      <img src="medias/time-regular-24.png" alt="">
-      <span>Watch later</span>
-    </a>
-    <a href="./SideBar/likedVideos.html" class="links">
-      <img src="medias/like-regular-24.png" alt="">
-      <span>Liked video</span>
-    </a>
+  </nav>
+  <!-- sidebar -->
+  <div class="container">
+    <div class="side-bar">
+      <a href="index.html" class="links active">
+        <img src="medias/home-solid-24.png" alt="">
+        <span>Home</span>
+      </a>
+      <a href="./SideBar/YtShorts.html" class="links">
+        <img src="medias/youtube-shorts-logo-15251.png" alt="">
+        <span>Shorts</span>
+      </a>
+      <a href="./SideBar/subscriptions.html" class="links">
+        <img src="medias/youtube_subscription_icon_136007.png" alt="">
+        <span>Subscription</span>
+      </a>
+      <hr class="separator">
+      <a href="./SideBar/History.html" class="links">
+        <img src="medias/history-regular-24.png" alt="">
+        <span>History</span>
+      </a>
+      <a href="./SideBar/Watch later.html" class="links">
+        <img src="medias/time-regular-24.png" alt="">
+        <span>Watch later</span>
+      </a>
+      <a href="./SideBar/likedVideos.html" class="links">
+        <img src="medias/like-regular-24.png" alt="">
+        <span>Liked video</span>
+      </a>
+    </div>
   </div>
-</div>
 
-<div class="Container Video">
+  <div class="Container Video">
     <div class="Videos">
-        <!-- Video Player -->
-        <div class="video-wrapper">
-            <video src="Videos/MOST EPIC SCENE FROM MARVEL CINEMATIC UNIVERSE WITH A NEW SCORE.mp4" controls autoplay muted></video>
-            <!-- Video Title -->
-            <h2>MOST EPIC SCENE FROM MARVEL CINEMATIC UNIVERSE WITH A NEW SCORE</h2>
-            <!-- Channel Info -->
-            <div class="channel-info">
-                <div class="channel-details">
-                    <!-- Channel Icon -->
-                    <img src="medias/User.png" alt="Channel Icon">
-                    <!-- Channel Name -->
-                    <p class="channel-name">MarkyTv</p>
-                </div>
-                <!-- Subscriber Count -->
-                <h6 class="subscriber-count">Subscribers: 8.8b</h6>
-                <!-- Subscribe Button -->
-                <button class="subscribe-button">Subscribe</button>
-            </div>
-            <!-- Video Description -->
-            <div class="description">
-                <p>Description of the video goes here.</p>
-            </div>
-            <!-- Buttons -->
-            <div class="feedback-buttons">
-                <button class="like-button">Like</button>
-                <button class="dislike-button">Dislike</button>
-                <button class="share-button">Share</button>
-                <button class="download-button">Download</button>
-            </div>
-            <div class="comment-section">
-                <div class="user-comment">
-                    <img src="medias/User.png" alt="icon">
-                    <textarea placeholder="Write your comment..."></textarea>
-                </div>
-            </div>
+      <!-- Video Player -->
+      <div class="video-wrapper">
+        <video src="Videos/MOST EPIC SCENE FROM MARVEL CINEMATIC UNIVERSE WITH A NEW SCORE.mp4" controls autoplay
+          muted></video>
+        <!-- Video Title -->
+        <h2>MOST EPIC SCENE FROM MARVEL CINEMATIC UNIVERSE WITH A NEW SCORE</h2>
+        <!-- Channel Info -->
+        <div class="channel-info">
+          <div class="channel-details">
+            <!-- Channel Icon -->
+            <img src="medias/User.png" alt="Channel Icon">
+            <!-- Channel Name -->
+            <p class="channel-name">MarkyTv</p>
+          </div>
+          <!-- Subscriber Count -->
+          <h6 class="subscriber-count">Subscribers: 8.8b</h6>
+          <!-- Subscribe Button -->
+          <button class="subscribe-button">Subscribe</button>
         </div>
+        <!-- Video Description -->
+        <div class="description">
+          <p>Description of the video goes here.</p>
+        </div>
+        <!-- Buttons -->
+        <div class="feedback-buttons">
+          <button class="like-button">Like</button>
+          <button class="dislike-button">Dislike</button>
+          <button class="share-button">Share</button>
+          <button class="download-button">Download</button>
+        </div>
+        <div class="comment-section">
+          <div class="user-comment">
+            <img src="medias/User.png" alt="icon">
+            <textarea placeholder="Write your comment..."></textarea>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 
 
-    <div class="Container Scroll">
-      <a href="bone3.html"><div class="video 2">
+  <div class="Container Scroll">
+    <a href="bone3.html">
+      <div class="video 2">
         <img src="Thumbnails/How to Use Image Trace and Live Paint in Illustrator Fast.png" class="thumbnail" alt="">
         <div class="content">
           <div class="info">
@@ -503,8 +540,10 @@ a{
             <h6>1.8B views · 1hour ago</h6>
           </div>
         </div>
-      </div></a>
-      <a href="bone4.html"><div class="video 1">
+      </div>
+    </a>
+    <a href="bone4.html">
+      <div class="video 1">
         <img src="Thumbnails/BLX.jpg" class="thumbnail" alt="">
         <div class="content">
           <div class="info">
@@ -513,8 +552,10 @@ a{
             <h6>1.8B views · 1hour ago</h6>
           </div>
         </div>
-      </div></a>
-      <a href="bone5.html"><div class="video 1">
+      </div>
+    </a>
+    <a href="bone5.html">
+      <div class="video 1">
         <img src="Thumbnails/Crud.jpg" class="thumbnail" alt="">
         <div class="content">
           <div class="info">
@@ -523,8 +564,10 @@ a{
             <h6>1.8B views · 1hour ago</h6>
           </div>
         </div>
-      </div></a>
-      <a href="bone6.html"><div class="video 1">
+      </div>
+    </a>
+    <a href="bone6.html">
+      <div class="video 1">
         <img src="Thumbnails/Tadow.jpg" class="thumbnail" alt="">
         <div class="content">
           <div class="info">
@@ -533,8 +576,10 @@ a{
             <h6>1.8B views · 1hour ago</h6>
           </div>
         </div>
-      </div></a>
-      <a href="bone9.html"><div class="video 8">
+      </div>
+    </a>
+    <a href="bone9.html">
+      <div class="video 8">
         <img src="Thumbnails/Sparkle.jpg" class="thumbnail" alt="">
         <div class="content">
           <div class="info">
@@ -543,8 +588,10 @@ a{
             <h6>1.8B views · 1hour ago</h6>
           </div>
         </div>
-      </div></a>
-      <a href="bone7.html"><div class="video 1">
+      </div>
+    </a>
+    <a href="bone7.html">
+      <div class="video 1">
         <img src="Thumbnails/BLXDB.jpg" class="thumbnail" alt="">
         <div class="content">
           <div class="info">
@@ -553,15 +600,40 @@ a{
             <h6>1.8B views · 1hour ago</h6>
           </div>
         </div>
-      </div></a>
-    </div>
+      </div>
+    </a>
+    <a href="bone10.html">
+      <div class="video 8">
+        <img src="Thumbnails/Sparkle.jpg" class="thumbnail" alt="">
+        <div class="content">
+          <div class="info">
+            <h4 class="title">Sparkle Your Name OST</h4>
+            <p class="channel-name">Choosy_tv</p>
+            <h6>1.8B views · 1hour ago</h6>
+          </div>
+        </div>
+      </div>
+    </a>
+    </a><a href="bone11.html">
+      <div class="video 8">
+        <img src="Thumbnails/new.png" class="thumbnail" alt="">
+        <div class="content">
+          <div class="info">
+            <h4 class="title">Minecraft Steve OOF Sound Effect</h4>
+            <p class="channel-name">Choosy_tv</p>
+            <h6>1.8B views · 1hour ago</h6>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
   </div>
 </body>
 <script>
   function toggleSidebar() {
-  var sidebar = document.querySelector('.side-bar');
-  sidebar.classList.toggle('expanded');
-}
+    var sidebar = document.querySelector('.side-bar');
+    sidebar.classList.toggle('expanded');
+  }
 </script>
 
 </html>
